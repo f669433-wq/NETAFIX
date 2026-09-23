@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <button id="menu-btn">☰</button>
+    <nav id="nav">
+      <a class="logo">NEXAFIT</a>
+      <a href="#home">Home</a>
+      <a href="#program">Programs</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <div id="home" class="hero-container">
+
+    <div >
+      <h1 class="p1">Build a stronger version of yourself.</h1>
+    </div>
+    <hr>
+    <div>
+      <p class="p2 cardp" >A modern gym dedicated to helping you build strength, improve fitness, and achieve your goals in a motivating environment.</p>
+    </div>
+
+    <div  class="hero-button">
+      <button onclick="location.href='#contact'" class="h-button" >Get Started</button>
+    </div>
+
+  </div>
+
+  <div id="program" class="card-container">
+    <div class="card card1">
+      <h2 id="Program">Strength Training</h2>
+      <p class="cardp">Build muscle, increase strength, and improve your overall performance with structured strength workouts.</p>
+      <button onclick="location.href='#contact'" class="join">Join Now</button>
+    </div>
+
+    <div class="card card2">
+      <h2>Weight Loss</h2>
+      <p class="cardp">Burn calories, improve your fitness, and achieve a healthier body through effective workouts and guidance.</p>
+      <button onclick="location.href='#contact'" class="join">Join Now</button>
+    </div>
+
+    <div class="card card3">
+      <h2>Personal Training</h2>
+      <p class="cardp">Get one-on-one guidance from a professional trainer with workouts designed around your goals and fitness level.</p>
+      <button onclick="location.href='#contact'" class="join">Join Now</button>
+    </div>
+
+    <div class="card card4">
+      <h2>Nutrition Guide</h2>
+      <p class="cardp">Learn how to fuel your body with balanced meals and practical nutrition advice that supports your fitness goals.</p>
+      <button onclick="location.href='#contact'" class="join">Join Now</button>
+    </div>
+  </div>
+  <hr>
+  <!-- <div id="about" class="about-container">
+    <h2>About Us</h2>
+    <p class="p5">We’re here to help you become stronger, healthier, and more confident. Whether your goal is to lose weight, build strength, improve your fitness, or simply live a healthier lifestyle, our gym provides the guidance, training, and motivation you need to reach your goals.</p>
+    <div class="gym">
+      <img src="gym1.jpg">
+      <img src="gym2.jpg">
+      <img src="gym3.jpg">
+    </div>
+  </div> -->
+
+  <div id="about" class="about-container">
+  <h2>About Us</h2>
+  <p class="p5">We’re here to help you become stronger, healthier, and more confident. Whether your goal is to lose weight, build strength, improve your fitness, or simply live a healthier lifestyle, our gym provides the guidance, training, and motivation you need to reach your goals.</p>
+  
+  <div class="slider-wrapper">
+    <button class="slider-btn prev-btn" id="prevBtn">&#10094;</button>
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="gym1.jpg" alt="Gym 1">
+        <img src="gym2.jpg" alt="Gym 2">
+        <img src="gym3.jpg" alt="Gym 3">
+      </div>
+    </div>
+    <button class="slider-btn next-btn" id="nextBtn">&#10095;</button>
+  </div>
+</div>
+  <br>
+
+<div class="bmi-container">
+  <h2>Calculate Your BMI</h2>
+  <div class="bmi-inputs">
+    <input type="number" id="height" placeholder="Height (cm)">
+    <input type="number" id="weight" placeholder="Weight (kg)">
+    <button id="calcBmiBtn">Calculate</button>
+  </div>
+  <p id="bmiResult"></p>
+</div>
+
+  <div id="contact" class="contact-container">
+    <p>Contact Us</p>
+
+    <input id="name" type="text" class="input" placeholder="Name">
+    <small id="nameError"></small>
+    <br>
+    <input id="email" type="email"  class="input" placeholder="Email">
+    <small id="emailError"></small>
+
+    <div >
+      
+      <button id="submitBtn" class="submit" type="button">Submit</button>
+    </div>
+
+  </div>
+
+  <footer>
+  <div class="footer-container">
+    <div>
+      <a class="logo">NEXAFIT</a>
+    </div>
+
+    <div>
+      <a href="#home">Home</a>
+      <a href="#program">Programs</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div>
+      <a>Phone:0712345678</a>
+      <a>Email:nexafit@gmail.com</a>
+      <a>Location:streetway</a>
+      <a>9:00am - 10:00pm</a>
+    </div>
+
+    <div>
+      <a>Instagram</a>
+      <a>Facebook</a>
+      <a>Tiktok</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <a>© 2026 NEXAFIT</a>
+      <a>Privacy Policy | Terms</a>
+  </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

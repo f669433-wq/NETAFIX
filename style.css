@@ -1,0 +1,516 @@
+html {
+    scroll-behavior: smooth;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #111;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+nav a:hover {
+    color: #ff4d00;
+}
+
+/* Desktop */
+#nav {
+    display: flex;
+    gap: 30px;
+}
+
+#menu-btn {
+    display: none;
+    background-color: #111;
+    color: white;
+    border-radius: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+/* Phone */
+@media (max-width: 768px) {
+
+    #menu-btn {
+        display: block;
+    }
+
+    #nav {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #nav.active {
+        display: flex;
+    }
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+body{
+  background-color: #1D4533;
+  color: #F7EAE0;
+  font-size: 1.2rem;
+  
+  
+}
+.hero-container{
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url("gymb.jpg") center / cover no-repeat;
+  display: block;
+  text-align: center;
+  height: 600px;
+  min-height: 90vh;
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+    .hero-container {
+        min-height: 80vh;
+        padding: 40px 30px;
+    }
+
+    .hero-container h1 {
+        font-size: 45px;
+    }
+
+    .hero-container p {
+        font-size: 18px;
+    }
+}
+
+
+/* Phones */
+@media (max-width: 600px) {
+    .hero-container {
+        min-height: 75vh;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .hero-container h1 {
+        font-size: 35px;
+    }
+
+    .hero-container p {
+        font-size: 16px;
+    }
+}
+
+
+/* Small phones */
+@media (max-width: 400px) {
+    .hero-container h1 {
+        font-size: 30px;
+    }
+
+    .hero-container p {
+        font-size: 15px;
+    }
+}
+
+.p1{
+  font-size: 5rem;
+}
+.p2{
+  font-size: 2rem;
+}
+button{
+  padding: 10px 30px;
+  border-style: none;
+  border-radius: 7px;
+  margin: 20px;
+  background-color: #24B1B1;
+  
+
+}
+
+
+.h-button{
+  font-size: 3rem;
+  border-radius: 20px;
+  background-color: #24B1B1;
+}
+
+.h-button:hover{
+  font-size: 4rem;
+
+}
+
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content:space-evenly;
+  gap:20px;
+  
+}
+@media (max-width: 900px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr;
+    }
+}
+.cardp{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card{
+  text-align: center;
+  background-color: seagreen;
+  margin: 20px;
+  border: 2px solid #F7EAE0;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card:hover{
+  box-shadow: 1px 1px 10px#F7EAE0;
+}
+
+.join:hover{
+  color: #ff4d00;
+  background-color: #111;
+}
+
+.card1{
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url("gym.jpg") center / cover no-repeat;
+}
+
+.card2{
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url("weightloss.jpg") center / cover no-repeat;
+}
+
+.card3{
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url("trainer.jpg") center / cover no-repeat;
+}
+
+.card4{
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url("nutrition.jpg") center / cover no-repeat;
+}
+
+.about-container{
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+.p5{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.gym{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  
+}
+.gym img{
+  height: 300px;
+  object-fit: cover;
+  width: calc((100% - 40px) / 3);
+  object-fit: cover;
+  
+}
+@media (max-width: 600px) {
+    .gym {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .gym img {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+
+
+
+.contact-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #111;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-container p {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #222;
+    color: white;
+
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #ff4d00;
+}
+
+.submit {
+    padding: 12px 35px;
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 8px;
+    background-color: #ff4d00;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit:hover {
+    background-color: #ff6a2a;
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    padding: 50px 8% 20px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.footer-container > div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    color: #ccc;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    margin-top: 40px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Phone */
+@media (max-width: 600px) {
+    footer {
+        padding: 40px 20px 20px;
+        text-align: center;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+/* BMI Calculator Styles */
+.bmi-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #111;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.bmi-container h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.bmi-subtitle {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+
+.bmi-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bmi-form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.bmi-result-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Fix Slider Layout & Animation */
+.slider-wrapper {
+  position: relative;
+  max-width: 800px;
+  width: 90%;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-track img {
+  width: 100%;
+  min-width: 100%; /* Prevents images from shrinking */
+  height: 400px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  font-size: 22px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.slider-btn:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.prev-btn {
+  left: 15px;
+}
+
+.next-btn {
+  right: 15px;
+}
+
+/* Responsive adjustments for BMI & Contact sections */
+@media (max-width: 600px) {
+    .bmi-container,
+    .contact-container {
+        width: 92%;
+        padding: 25px 15px;
+        margin: 30px auto;
+    }
+
+    .bmi-container h2,
+    .contact-container p {
+        font-size: 24px;
+    }
+
+    .bmi-form input,
+    .contact-container .input {
+        height: 45px; /* Slightly compact for smaller phone screens */
+        font-size: 15px;
+    }
+
+    .submit {
+        width: 100%; /* Makes button full width on phones for easier tapping */
+        padding: 12px 0;
+    }
+}
